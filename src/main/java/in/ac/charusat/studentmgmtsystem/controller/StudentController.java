@@ -61,7 +61,7 @@ public class StudentController {
         studentRepository.save(student);
         return studentRepository.findAll();
     }
-
+    //
     // Update the student information
     @PutMapping("/student/{id}") // update table student set name=? where id=?
     public List<Student> updateStudent(@RequestBody Student student, @PathVariable Integer id) {
