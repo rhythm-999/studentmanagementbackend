@@ -37,7 +37,7 @@ public class StudentController {
     @GetMapping
     public String displayWelcomeMessage(){
         return "<center><h1>Welcome to the Spring Boot Security!!!!</h1></center>";
-    }
+    } // Security ADDED
     @GetMapping("/listStudents")
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
